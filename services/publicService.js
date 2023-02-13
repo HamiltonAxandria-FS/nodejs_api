@@ -2,12 +2,12 @@ const axios = require(`axios`);
 require("dotenv").config();
 
 const publicSerivce = async () => {
-    console.log("Real PublicAPI");
+    console.log("Real CatAPI");
     return await axios.get(`${process.env.publicURL}`)
 };
 
 const publicSerivceById = async (id) => {
-    console.log("Real PublicAPI by Id");
+    console.log("Real CatAPI by Id");
     return await axios.get(`${process.env.publicURL}${id}`)
 }
 

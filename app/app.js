@@ -2,10 +2,11 @@ const express = require("express");
 const publicRouter = require("../router/publicRouter");
 const app = express();
 
-//http://localhost:3000
+//http://localhost:3001
 app.get("/", (req,res,next) => {
-    res.status(200).send("Service is up");
+    res.status(200).json("Message: Service is up");
 });
+
 //router middleware
 app.use("/public", publicRouter);
 
